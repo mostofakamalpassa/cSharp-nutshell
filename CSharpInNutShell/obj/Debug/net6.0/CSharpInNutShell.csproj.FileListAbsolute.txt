@@ -1,0 +1,15 @@
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\bin\Debug\net6.0\CSharpInNutShell.exe
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\bin\Debug\net6.0\CSharpInNutShell.deps.json
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\bin\Debug\net6.0\CSharpInNutShell.runtimeconfig.json
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\bin\Debug\net6.0\CSharpInNutShell.dll
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\bin\Debug\net6.0\CSharpInNutShell.pdb
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\obj\Debug\net6.0\CSharpInNutShell.csproj.AssemblyReference.cache
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\obj\Debug\net6.0\CSharpInNutShell.GeneratedMSBuildEditorConfig.editorconfig
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\obj\Debug\net6.0\CSharpInNutShell.AssemblyInfoInputs.cache
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\obj\Debug\net6.0\CSharpInNutShell.AssemblyInfo.cs
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\obj\Debug\net6.0\CSharpInNutShell.csproj.CoreCompileInputs.cache
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\obj\Debug\net6.0\CSharpInNutShell.dll
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\obj\Debug\net6.0\refint\CSharpInNutShell.dll
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\obj\Debug\net6.0\CSharpInNutShell.pdb
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\obj\Debug\net6.0\CSharpInNutShell.genruntimeconfig.cache
+D:\BasicC#\CSharpInNutShell\CSharpInNutShell\obj\Debug\net6.0\ref\CSharpInNutShell.dll
