@@ -147,6 +147,62 @@ special meaning; for example:
         }
 
 
+        public void StringType()
+        {
+            /*
+             * aliasing the System.String
+             * represents an immutable (unmodifiable) sequence of Unicode characters. 
+             * A string literal is specified within double quotes:
+             * string is a reference type rather than a value type.
+             *  Its equality operators, however, follow valuetype semantics:
+             */
+
+            string a = "Heat";
+            string b = "test";
+            Console.Write(a == b); // False
+
+            /*
+             * The escape sequences that are valid for char literals also work inside
+             * 
+             * 
+             */
+            string d = "Here's a tab:\t";
+            string a1 = "\\\\server\\fileshare\\helloworld.cs";
+            string a2 = @"\\server\fileshare\helloworld.cs";
+            /*
+             * A verbatim string literal is prefixed with @ and does not support escape sequences
+             * A verbatim string literal can also span multiple lines:
+             */
+
+            string escaped = "First Line\r\nSecond Line";
+            string verbatim = @"First Line Second Line";
+            string xml = @"<customer id=""123""></customer>";
+
+            /*
+             * Sring Concatination
+             * The + operator concatenates two strings:
+             * One of the operands might be a nonstring value, in which case ToString() is called on that value
+             * System.Text.StringBuilder
+             * 
+             */
+            string s = "a" + "b";
+
+            /*
+             * String interpolation
+             * A string preceded with the $ character is called an interpolated string. Interpolated strings can include expressions enclosed in braces
+             * 
+             * Any valid C# expression of any type can appear within the braces, and C# will convert the expression to a string by calling its ToString method or equivalent.
+             */
+
+
+            int x = 4;
+            Console.Write($"A square has {x} sides"); // Prints: A square has 4 sides
+            string s2 = $"255 in hex is {byte.MaxValue:X2}"; // X2 = 2-digit hexadecimal
+                                                             // Evaluates to "255 in hex is FF"
+            bool bb = true;
+            Console.WriteLine($"The answer in binary is {(bb ? 1 : 0)}");
+        }
+
 
 
 
