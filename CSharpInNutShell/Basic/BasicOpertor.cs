@@ -96,6 +96,61 @@ even evaluated.
         {
             return (a > b) ? a : b;
         }
+
+
+        public int TernaryOperator(int a, int b)
+        {
+            /*
+             The conditional operator (more commonly called the ternary operator
+because it’s the only operator that takes three operands) has the form q ? a
+: b; thus, if condition q is true, a is evaluated, else b is evaluated:
+             */
+
+            return (a > b) ? a : b;
+        }
+
+
+        public void Characters()
+        {
+            /*
+                C#’s char type (aliasing the System.Char type) represents a Unicode
+character and occupies 2 bytes (UTF-16). A char literal is specified within
+single quotes: 
+
+             */
+
+            char c = 'A'; // Simple character
+
+            /*
+                Escape sequences express characters that cannot be expressed or interpreted
+literally. An escape sequence is a backslash followed by a character with a
+special meaning; for example: 
+
+             */
+            char newLine = '\n';
+            char backSlash = '\\';
+            /*
+             * \' Single quote 0x0027
+             * \" Double quote 0x0022
+             * \\ Backslash 0x005C
+             * \0 Null 0x0000
+             * \a Alert 0x0007
+             * \b Backspace 0x0008
+             * \f Form feed 0x000C
+             * \n New line 0x000A
+             * \r Carriage return 0x000D
+             * \t Horizontal tab 0x0009
+             * \v Vertical tab 0x000B
+             * 
+             */
+
+        }
+
+
+
+
+
+
     }
 
 
