@@ -201,6 +201,18 @@ special meaning; for example:
                                                              // Evaluates to "255 in hex is FF"
             bool bb = true;
             Console.WriteLine($"The answer in binary is {(bb ? 1 : 0)}");
+
+            /*
+             * Interpolated strings must complete on a single line, unless you also specify the verbatim string operator:
+             * 
+             * To include a brace literal in an interpolated string, repeat the desired brace character.
+             * 
+             */
+
+            int x3 = 2;
+            // Note that $ must appear before @ prior to C# 8:
+            string s3 = $@"this interpolation spans {
+            x3} lines";
         }
 
 
