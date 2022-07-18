@@ -56,5 +56,94 @@ namespace CSharpInNutShell.Basic
             // The StringBuilder referenced by ref2 is NOT yet eligible for GC.
             Console.WriteLine(ref3); // object2
         }
+
+
+        /*
+         * Parameters
+         * A method may have a sequence of parameters. Parameters define the set of arguments that must be provided for that method.
+         * 
+         * 
+         */
+
+
+        /*
+         * You can control how parameters are passed with the ref, in, and out modifiers
+         * ref -> Reference  -> Going in
+         * in -> Reference (read-only)  -> Going in
+         * out -> Reference  -> Going in
+         * 
+         */
+
+        // Passing arguments by value
+        //By default, arguments in C# are passed by value, which is by far the most common case.
+
+        StringBuilder sb = new StringBuilder();
+        static void Foo(int p)
+        {
+
+            p = p + 1; // Increment p by 1
+            Console.WriteLine(p); // Write p to screen
+        }
+
+        static void Foo(StringBuilder fooSB)
+        {
+            fooSB.Append("test");
+            fooSB = null;
+        }
+
+        static void Foo(ref int p)
+        {
+            p = p + 1; // Increment p by 1
+            Console.WriteLine(p); // Write p to screen
+        }
+
+        static void Swap(ref string a, ref string b)
+        {
+            string temp = a;
+            a = b;
+            b = temp;
+        }
+
+        void Split(string name, out string firstNames, out string lastName)
+        {
+            int i = name.LastIndexOf(' ');
+            firstNames = name.Substring(0, i);
+            lastName = name.Substring(i + 1);
+        }
+        // Like a ref parameter, an out parameter is passed by reference.
+
+
+        int Sum(params int[] ints)
+        {
+            int sum = 0;
+            for (int i = 0; i < ints.Length; i++)
+                sum += ints[i]; // Increase sum by ints[i]
+            return sum;
+        }
+
+        // name arguments 
+
+        void Foo(int x, int y) { Console.WriteLine(x + ", " + y); }
+
+        //Foo(x:1, y:2);
+        //Foo(y:2, x:1);
+
+
+        public void TargetTypeExpression()
+        {
+
+            /*
+             * Another way to reduce lexical repetition is with target-typed new expressions (
+          
+             */
+
+            System.Text.StringBuilder sb1 = new();
+            System.Text.StringBuilder sb2 = new("Test");
+
+            // This is precisely equivalent to:
+
+            System.Text.StringBuilder sb4 = new System.Text.StringBuilder();
+            System.Text.StringBuilder sb5 = new System.Text.StringBuilder("Test");
+        }
     }
 }
