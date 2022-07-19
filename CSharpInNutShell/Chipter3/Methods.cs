@@ -43,6 +43,26 @@ namespace CSharpInNutShell.Chipter3
         void Foo2(int x) => Console.WriteLine(x);
 
 
+        // Local methods
+        //You can define a method within another method
 
+        void WriteCubes()
+        {
+            Console.WriteLine(Cube(3));
+            Console.WriteLine(Cube(4));
+            Console.WriteLine(Cube(5));
+            int Cube(int value) => value * value * value;
+            // Static local methods
+            static int Cube1(int value) => value * value * value;
+        }
+
+
+        // Overloading methods
+        // A type can overload methods (define multiple methods with the same name) as long as the signatures are different.
+
+        void Foo3(int x) { Console.WriteLine(x);  }
+        void Foo3(double x) { Console.WriteLine(x); }
+        void Foo3(int x, float y) { Console.WriteLine(x + y); }
+        void Foo3(float x, int y) { Console.WriteLine(x+y); }
     }
 }
