@@ -15,5 +15,29 @@ namespace CSharpInNutShell.Chipter3
 
         //The this reference is valid only within nonstatic members of a class or struct.
 
+        /**
+         * 
+         * A static constructor executes once per type rather than once per instance.
+         * A type can define only one static constructor, and it must be parameterless and have the same name as the type:
+         * 
+         */
+        static Test() { Console.WriteLine("Type Initialized"); }
+
+        /**
+         * 
+         * The runtime automatically invokes a static constructor just prior to the type being used. Two things trigger this:
+         * 
+         * */
+
+        // Instantiating the type
+
+        // Accessing a static member in the type
+
+        // The only modifiers allowed by static constructors are unsafe and extern
+
+        // If a static constructor throws an unhandled exception that type becomes unusable for the life of the application.
+
+
+
     }
 }
