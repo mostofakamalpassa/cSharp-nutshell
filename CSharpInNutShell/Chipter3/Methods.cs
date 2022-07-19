@@ -64,5 +64,11 @@ namespace CSharpInNutShell.Chipter3
         void Foo3(double x) { Console.WriteLine(x); }
         void Foo3(int x, float y) { Console.WriteLine(x + y); }
         void Foo3(float x, int y) { Console.WriteLine(x+y); }
+
+        /*
+         * However, the following pairs of methods cannot coexist in the same type, because the return type and the params modifier are not part of a method’s signature:
+         * 
+         * Whether a parameter is pass-by-value or pass-by-reference is also part of the signature. For example, Foo(int) can coexist with either Foo(ref int) or Foo(out int). However, Foo(ref int) and Foo(out int) cannot coexist:
+         */
     }
 }
