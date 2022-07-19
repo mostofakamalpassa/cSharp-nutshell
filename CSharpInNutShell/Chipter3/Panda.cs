@@ -8,7 +8,18 @@ namespace CSharpInNutShell.Chipter3
 {
     internal class Panda
     {
+        // The this Reference
+        // The this reference refers to the instance itself
+        public Panda Mate; 
+
         string name; // Define field
+
+        public void Marry(Panda partner)
+        {
+            Mate = partner;
+            partner.Mate = this;
+        }
+
         //Instance constructors allow the following modifiers:
 
         public Panda(string n) // Define constructor

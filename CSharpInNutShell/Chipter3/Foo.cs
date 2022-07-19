@@ -11,5 +11,13 @@ namespace CSharpInNutShell.Chipter3
         // The get and set accessors can have different access levels.
         // The typical use case for this is to have a public property with an internal or private
         // access modifier on the setter
+
+
+        private decimal x;
+        public decimal X
+        {
+            get { return x; }
+            private set { x = Math.Round(value, 2); }
+        }
     }
 }
