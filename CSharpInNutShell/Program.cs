@@ -42,6 +42,15 @@ class Program
         var (width1, height1) = rect;
         // Console.WriteLine(widht + " " + height);
 
+        Bunny bunny = new Bunny { LikeCarrots = true, LikeHumans = true, Name="cart"};
+
+        Bunny bunny1 = new Bunny();
+        bunny1.LikeHumans = true;
+        bunny1.Name = "jamal";
+        bunny1.LikeCarrots = true;
+
+        Console.WriteLine(bunny.LikeHumans);
+
 
     }
 }
