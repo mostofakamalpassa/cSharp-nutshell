@@ -57,5 +57,18 @@ namespace CSharpInNutShell.Chipter3
         // A constant is declared with the const keyword and must be initialized with a value
         public const string Message = "Hello World";
 
+
+        public static double Circumference(double radius)
+        {
+            return 2 * System.Math.PI * radius;
+        }
+
+        void Test()
+        {
+            //  Constants can also be declared local to a method:
+            const double twoPI = 2 * System.Math.PI;
+           
+}
+
     }
 }
