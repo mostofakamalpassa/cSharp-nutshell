@@ -42,5 +42,35 @@ namespace CSharpInNutShell.Chipter3
          * */
 
 
+        /**
+          * 
+          * A type can declare multiple indexers, each with parameters of different types. 
+          * An indexer can also take more than one parameter:
+          * 
+          * 
+          * */
+
+        public string this[int arg1, string arg2]
+        {
+            get { return arg2; }
+            set { arg2 = value; }
+        }
+
+
+        // If you omit the set accessor, an indexer becomes read-only, and you can use expression-bodied syntax to shorten its definition:
+        string[] words = { "This is words" };
+        public string this[int wordNums] => words[wordNums];
+
+
+        // CLR indexer implementation
+
+        // Indexers internally compile to methods called get_Item and set_Item, as follows:
+
+        //  public string get_Item(int wordNum) { ...}
+        //  public void set_Item(int wordNum, string value) { ...}
+
+
+
+
     }
 }

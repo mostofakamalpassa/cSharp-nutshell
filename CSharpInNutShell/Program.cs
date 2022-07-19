@@ -49,8 +49,21 @@ class Program
         bunny1.Name = "jamal";
         bunny1.LikeCarrots = true;
 
-        Console.WriteLine(bunny.LikeHumans);
+        //Console.WriteLine(bunny.LikeHumans);
 
+        Sentence sentence = new Sentence();
+        Console.WriteLine(sentence[3]);
+        sentence[3] = "hello kamal";
+
+        Console.WriteLine(sentence[3]);
+
+        /**
+         * 
+         * A type can declare multiple indexers, each with parameters of different types. 
+         * An indexer can also take more than one parameter:
+         * 
+         * 
+         * */
 
     }
 }
