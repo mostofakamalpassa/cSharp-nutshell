@@ -40,6 +40,59 @@ namespace CSharpInNutShell.Chipter3.Inheritance
             Display (msft);
             Display (mansion);
          * 
+         * Polymorphism works on the basis that subclasses (Stock and House) have all the features of their base class (Asset). 
+         * The converse, however, is not true. 
+         * If Display was modified to accept a House, you could not pass in an Asset:
          */
+
+
+
+
+
+    /****
+     * ================= Casting and Reference Conversions ==========
+     * 
+     * An object reference can be
+     * 
+     * Implicitly upcast to a base class reference
+     * 
+     * Explicitly downcast to a subclass reference
+     * 
+     * Upcasting and downcasting between compatible reference types performs
+     * reference conversions: a new reference is (logically) created that points to the same object
+     * An upcast always succeeds; a downcast succeeds only if the object is suitably typed
+     * 
+     * =================== Upcasting ================
+     * An upcast operation creates a base class reference from a subclass reference
+     * 
+     * Stock msft = new Stock();
+     * Asset a = msft; // Upcast
+     * 
+     * 
+     * ================== Downcasting =========================
+     * A downcast operation creates a subclass reference from a base class reference
+     * 
+     * Stock msft = new Stock();
+        Asset a = msft; // Upcast
+        Stock s = (Stock)a; // Downcast
+        Console.WriteLine (s.SharesOwned); // <No error>
+        Console.WriteLine (s == a); // True
+        Console.WriteLine (s == msft); // True
+     * 
+     * ***/
+
+
+        // as operator
+        // is operator
+
+    public virtual decimal Liability => 0; // Expression-bodied property
+
+        /***
+         * 
+         * ==========Virtual Function Members ==================
+         * 
+         * */
+
+
     }
 }
