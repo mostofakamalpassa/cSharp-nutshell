@@ -3,6 +3,7 @@ using CSharpInNutShell.Basic;
 using CSharpInNutShell.Chipter3;
 using CSharpInNutShell.Chipter3.Inheritance;
 using Stock = CSharpInNutShell.Chipter3.Inheritance.Stock;
+using Stocks = CSharpInNutShell.Chipter3.Abstract.Stock;
 //UnitConverter unitConverter = new UnitConverter(10);
 //Console.WriteLine(unitConverter.Convert(12) ); 
 //Console.WriteLine(unitConverter.Convert(30) ); 

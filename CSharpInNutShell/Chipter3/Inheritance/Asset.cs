@@ -94,5 +94,7 @@ namespace CSharpInNutShell.Chipter3.Inheritance
          * */
 
 
+        public virtual Asset Clone() => new Asset { Name = Name };
+
     }
 }
