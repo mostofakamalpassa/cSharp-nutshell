@@ -24,5 +24,18 @@ namespace AbstrectAndInterface.Abstract
          * ****/
 
         public override decimal Liability => base.Liability + Mortgage;
+
+        /*********
+         * 
+         * ================= The base Keyword ====================
+         * 
+         * The base keyword is similar to the this keyword. It serves two essential purposes
+         * Accessing an overridden function member from the subclass
+         * 
+         * Calling a base-class constructor (see the next section)
+         * With the base keyword, we access Asset’s Liability property nonvirtually.
+         * This means that we will always access Asset’s version of this property—regardless of the instance’s actual runtime type
+         * 
+         * *******/
     }
 }

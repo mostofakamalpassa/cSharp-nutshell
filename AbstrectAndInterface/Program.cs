@@ -1,5 +1,6 @@
 ﻿
 using AbstrectAndInterface;
+using AbstrectAndInterface.Base;
 
 public class Program
 {
@@ -16,5 +17,13 @@ public class Program
         BaseClass b2 = h;
         h.Foo(); // Hider.Foo
         b2.Foo(); // BaseClass.Foo
+
+        Stack stack = new Stack();
+        stack.Push("sausage");
+        string s = (string)stack.Pop(); // Downcast, so explicit cast is needed
+        Console.WriteLine(s); // sausage
+
+        stack.Push(3);
+        int three = (int)stack.Pop();
     }
 }
