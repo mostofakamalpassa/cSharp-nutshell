@@ -66,7 +66,8 @@ class Program
         House.Display(house);
         Stock.Display(stock);
 
-
+        Stocks stock1 = new Stocks();
+        stock1.A = 5;
     }
 
 }
