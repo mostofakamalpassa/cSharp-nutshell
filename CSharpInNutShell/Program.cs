@@ -1,7 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CSharpInNutShell.Basic;
 using CSharpInNutShell.Chipter3;
-
+using CSharpInNutShell.Chipter3.Inheritance;
+using Stock = CSharpInNutShell.Chipter3.Inheritance.Stock;
 //UnitConverter unitConverter = new UnitConverter(10);
 //Console.WriteLine(unitConverter.Convert(12) ); 
 //Console.WriteLine(unitConverter.Convert(30) ); 
@@ -51,19 +52,20 @@ class Program
 
         //Console.WriteLine(bunny.LikeHumans);
 
-        Sentence sentence = new Sentence();
-        Console.WriteLine(sentence[3]);
-        sentence[3] = "hello kamal";
+        //Sentence sentence = new Sentence();
+        //Console.WriteLine(sentence[3]);
+        //  sentence[3] = "hello kamal";
 
-        Console.WriteLine(sentence[3]);
+        //  Console.WriteLine(sentence[3]);
 
-        /**
-         * 
-         * A type can declare multiple indexers, each with parameters of different types. 
-         * An indexer can also take more than one parameter:
-         * 
-         * 
-         * */
+        Stock stock = new Stock { Name = "kamal passa", SharesOwned = 200 };
+
+        House house = new House { Name = "jamal", Mortgage = 500 };
+     
+        House.Display(house);
+        Stock.Display(stock);
+
 
     }
+
 }

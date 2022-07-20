@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpInNutShell.Chipter3
 {
-    partial class PaymentForm
+    partial class PaymentForm  // In auto-generated file
     {
 
         /***
@@ -36,6 +36,8 @@ namespace CSharpInNutShell.Chipter3
          * **/
 
         partial void ValidatePayment(decimal amount);
+
+
 
     }
 }

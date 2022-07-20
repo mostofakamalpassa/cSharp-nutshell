@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpInNutShell.Chipter3
 {
-    internal class Test
+    internal partial class Test
     {
 
         string name;
@@ -37,7 +37,15 @@ namespace CSharpInNutShell.Chipter3
 
         // If a static constructor throws an unhandled exception that type becomes unusable for the life of the application.
 
+    //  public  partial bool IsValid(string identifier);  get Error because Access modifires and return types 
+    // public    partial bool TryParse(string number, out int result);  get Error Access modifires and return types and out keyword
+        partial void M1(); // Extended partial method
+        partial void M2(); // Extended partial method
 
+
+        int count = 123;
+        string nameOfcount = nameof(count); // name is "count"
+        string nameOfstring = nameof(StringBuilder.Length);
 
     }
 }
