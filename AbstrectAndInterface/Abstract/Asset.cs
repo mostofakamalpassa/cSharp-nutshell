@@ -21,7 +21,7 @@ namespace CSharpInNutShell.Chipter3.Abstract
 
         // Note empty implementation
         public abstract decimal NetValue { get; }
-     
+        public virtual decimal Liability => 0;
 
     }
 }
