@@ -1,4 +1,6 @@
 ﻿using Generics;
+using Generics.GenericTypes;
+
 public class Program
 {
 
@@ -14,6 +16,9 @@ public class Program
             Dictionarys<int, string> myDict = new Dictionarys<int, string>();
       //  Or:
         var myDicts = new Dictionarys<int, string>();
+        //Compare<int> com = new Compare<int>();
+        Compare<int>.Max<int, int>(5, 10); // 10
+                                           // string last = Max("ant", "zoo"); // zoo
 
     }
 
