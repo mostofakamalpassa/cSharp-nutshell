@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpInNutShell", "CSharpInNutShell\CSharpInNutShell.csproj", "{1571A59F-E616-47EB-A877-5058AA896481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstrectAndInterface", "AbstrectAndInterface\AbstrectAndInterface.csproj", "{1D14F464-91BD-4B11-ACD5-02839D386358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstrectAndInterface", "AbstrectAndInterface\AbstrectAndInterface.csproj", "{1D14F464-91BD-4B11-ACD5-02839D386358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{0DBB264D-8B83-4838-91FA-F0E0E0C24DEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1D14F464-91BD-4B11-ACD5-02839D386358}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D14F464-91BD-4B11-ACD5-02839D386358}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D14F464-91BD-4B11-ACD5-02839D386358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBB264D-8B83-4838-91FA-F0E0E0C24DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBB264D-8B83-4838-91FA-F0E0E0C24DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBB264D-8B83-4838-91FA-F0E0E0C24DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBB264D-8B83-4838-91FA-F0E0E0C24DEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

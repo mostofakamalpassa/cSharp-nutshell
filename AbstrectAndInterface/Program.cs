@@ -35,7 +35,13 @@ public class Program
         //}
 
        IEnumerators ee = (IEnumerators)  Util.GetCountDwon();
-        Console.WriteLine(ee.MoveNext()); ;
+        Console.WriteLine(ee.MoveNext());
+
+
+        RichTextBox r = new RichTextBox();
+        r.Undo(); // RichTextBox.Undo
+        ((IUndoable)r).Undo(); // RichTextBox.Undo
+        ((TextBox)r).Undo(); // RichTextBox.Undo
 
     }
 }
