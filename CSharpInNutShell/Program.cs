@@ -2,6 +2,7 @@
 using CSharpInNutShell.Basic;
 using CSharpInNutShell.Chipter3;
 using CSharpInNutShell.Chipter3.Inheritance;
+using System.Text;
 using Stock = CSharpInNutShell.Chipter3.Inheritance.Stock;
 using Stocks = CSharpInNutShell.Chipter3.Abstract.Stock;
 //UnitConverter unitConverter = new UnitConverter(10);
@@ -16,6 +17,10 @@ class Program
 {
     static void Main() // Program entry point
     {
+
+        StringBuilder stb;
+        stb = new StringBuilder("hello kamal passa");
+        CSharpInNutShell.Basic.Foo foo = new CSharpInNutShell.Basic.Foo(stb.ToString());
         //int x = 12 * 30;
         //Console.WriteLine(x);
 
