@@ -85,9 +85,18 @@ namespace AbstrectAndInterface.Base
         public void CopingSematicBoxingAndUnboxing()
         {
             int i = 3;
+
+            dynamic name = "kamal";
+            name = 2345;
+            var abc = 10;
+            Console.WriteLine(name);
+            //abc = "jamal";
             object boxed = i;
             i = 5;
             Console.WriteLine(boxed); // 3
+
+
+            
         }
     }
 }

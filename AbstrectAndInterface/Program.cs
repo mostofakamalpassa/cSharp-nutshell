@@ -1,10 +1,11 @@
 ﻿
 using AbstrectAndInterface;
 using AbstrectAndInterface.Base;
+using AbstrectAndInterface.InterFace;
 
 public class Program
 {
-    public void Main()
+    public static void Main()
     {
         // See https://aka.ms/new-console-template for more information
         Console.WriteLine("Hello, World!");
@@ -25,5 +26,14 @@ public class Program
 
         stack.Push(3);
         int three = (int)stack.Pop();
+
+        IEnumerators e = new Countdown();
+
+        while (e.MoveNext())
+        {
+            Console.WriteLine(e.Current);
+        }
+
+
     }
 }

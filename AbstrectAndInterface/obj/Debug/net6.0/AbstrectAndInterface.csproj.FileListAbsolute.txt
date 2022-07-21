@@ -1,0 +1,15 @@
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\obj\Debug\net6.0\AbstrectAndInterface.csproj.AssemblyReference.cache
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\obj\Debug\net6.0\AbstrectAndInterface.GeneratedMSBuildEditorConfig.editorconfig
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\obj\Debug\net6.0\AbstrectAndInterface.AssemblyInfoInputs.cache
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\obj\Debug\net6.0\AbstrectAndInterface.AssemblyInfo.cs
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\obj\Debug\net6.0\AbstrectAndInterface.csproj.CoreCompileInputs.cache
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\bin\Debug\net6.0\AbstrectAndInterface.exe
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\bin\Debug\net6.0\AbstrectAndInterface.deps.json
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\bin\Debug\net6.0\AbstrectAndInterface.runtimeconfig.json
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\bin\Debug\net6.0\AbstrectAndInterface.dll
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\bin\Debug\net6.0\AbstrectAndInterface.pdb
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\obj\Debug\net6.0\AbstrectAndInterface.dll
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\obj\Debug\net6.0\refint\AbstrectAndInterface.dll
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\obj\Debug\net6.0\AbstrectAndInterface.pdb
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\obj\Debug\net6.0\AbstrectAndInterface.genruntimeconfig.cache
+D:\BasicC#\CSharpInNutShell\AbstrectAndInterface\obj\Debug\net6.0\ref\AbstrectAndInterface.dll
