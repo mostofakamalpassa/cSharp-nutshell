@@ -29,11 +29,13 @@ public class Program
 
         IEnumerators e = new Countdown();
 
-        while (e.MoveNext())
-        {
-            Console.WriteLine(e.Current);
-        }
+        //while (e.MoveNext())
+        //{
+        //    Console.WriteLine(e.Current);
+        //}
 
+       IEnumerators ee = (IEnumerators)  Util.GetCountDwon();
+        Console.WriteLine(ee.MoveNext()); ;
 
     }
 }
