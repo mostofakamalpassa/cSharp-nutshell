@@ -35,5 +35,24 @@ namespace Delegates.Delegate
              * ******/
 
         public event EventHandler<PriceChangedEventArgs> PriceChanged;
+
+        protected virtual void OnPriceChanged(PriceChangedEventArgs e)
+        {
+            if (PriceChanged != null) PriceChanged(this, e);
+        }
+
+        /*********
+         * 
+         * This provides a central point from which subclasses can invoke or override the event (assuming the class is not sealed).
+         * 
+         * 
+         * 
+         * 
+         * **********/
+        void stock_PriceChanged(object sender, PriceChangedEventArgs e)
+        {
+            if ((e.NewPrice - e.LastPrice) / e.LastPrice > 0.1M)
+                Console.WriteLine("Alert, 10% stock price increase!");
+        }
     }
 }
