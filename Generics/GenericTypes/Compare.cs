@@ -17,5 +17,12 @@ namespace Generics.GenericTypes
         {
             throw new NotImplementedException();
         }
+
+
+        static void Initialize<T>(T[] array) where T : new()
+        {
+            for (int i = 0; i < array.Length; i++)
+                array[i] = new T();
+        }
     }
 }
