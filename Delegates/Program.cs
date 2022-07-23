@@ -19,5 +19,23 @@ public class Program
         progressReporter.Invoke(33);
 
 
+        // 
+
+        ProgressReporters p = Util.WriteProgressToConsole;
+        p += Util.WriteProgressToFile;
+        Util.HardWork(p);
+
+        // Faunction or Func Delegate Return in or out parameters
+
+        Func<String> func = () => "hellow kamal passa";
+        Func<Object> func2;
+
+        // Action Delegate 
+
+        Action<string> ac;
+        ac = (i) => Console.WriteLine("hello kamal"); ;
+
+
+
     }
 }

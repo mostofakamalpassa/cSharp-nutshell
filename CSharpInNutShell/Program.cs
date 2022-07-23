@@ -72,7 +72,7 @@ class Program
         Stock.Display(stock);
 
         Stocks stock1 = new Stocks();
-        stock1.A = 5;
+       // stock1.A = 5;
     }
 
 }
