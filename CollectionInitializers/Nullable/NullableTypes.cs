@@ -53,6 +53,56 @@ namespace CollectionInitializers.Nullable
             int? x = obj as int?;
             Console.WriteLine(x.HasValue); // false 
 
+
+            
+        }
+
+        public void OperatorLefting()
+        {
+            // Operator Lifting
+
+            /****
+             * The Nullable<T> struct does not define operators such as <, >, or even ==. 
+             * Despite this, the following code compiles and executes correctly
+             * 
+             * 
+             * ****/
+
+            int? x = 5;
+            int? y = 10;
+            bool b = x < y; // true
+
+            /***
+             * This works because the compiler borrows or “lifts” the less-than operator from the underlying value type.
+             * 
+             * 
+             * ***/
+
+            bool c = (x.HasValue && y.HasValue) ? (x.Value < y.Value) : false;
+
+            // Equality operator examples
+            Console.WriteLine(x == y); // False
+            Console.WriteLine(x == null); // False
+            Console.WriteLine(x == 5); // True
+            Console.WriteLine(y == null); // True
+            Console.WriteLine(y == 5); // False
+            Console.WriteLine(y != 5); // True
+
+            // Relational operator examples
+            Console.WriteLine(x < 6); // True
+            Console.WriteLine(y < 6); // False
+            Console.WriteLine(y > 6); // False
+
+            // All other operator examples
+            Console.WriteLine(x + 5); // 10
+            Console.WriteLine(x + y); // null (prints empty line)
+
+            /*********
+             * 
+             * The compiler performs null logic differently depending on the category of operator. 
+             * The following sections explain these different rules.
+             * 
+             * *******/
         }
     }
 }
