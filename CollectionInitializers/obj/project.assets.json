@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BasicC#\\CSharpInNutShell\\CSharpInNutShell\\CSharpInNutShell.csproj",
-      "projectName": "CSharpInNutShell",
-      "projectPath": "D:\\BasicC#\\CSharpInNutShell\\CSharpInNutShell\\CSharpInNutShell.csproj",
+      "projectUniqueName": "D:\\BasicC#\\CSharpInNutShell\\CollectionInitializers\\CollectionInitializers.csproj",
+      "projectName": "CollectionInitializers",
+      "projectPath": "D:\\BasicC#\\CSharpInNutShell\\CollectionInitializers\\CollectionInitializers.csproj",
       "packagesPath": "C:\\Users\\Mostofa Kamal Passa\\.nuget\\packages\\",
-      "outputPath": "D:\\BasicC#\\CSharpInNutShell\\CSharpInNutShell\\obj\\",
+      "outputPath": "D:\\BasicC#\\CSharpInNutShell\\CollectionInitializers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

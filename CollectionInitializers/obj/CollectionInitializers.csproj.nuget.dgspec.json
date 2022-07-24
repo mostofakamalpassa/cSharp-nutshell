@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BasicC#\\CSharpInNutShell\\Delegates\\Delegates.csproj": {}
+    "D:\\BasicC#\\CSharpInNutShell\\CollectionInitializers\\CollectionInitializers.csproj": {}
   },
   "projects": {
-    "D:\\BasicC#\\CSharpInNutShell\\Delegates\\Delegates.csproj": {
+    "D:\\BasicC#\\CSharpInNutShell\\CollectionInitializers\\CollectionInitializers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BasicC#\\CSharpInNutShell\\Delegates\\Delegates.csproj",
-        "projectName": "Delegates",
-        "projectPath": "D:\\BasicC#\\CSharpInNutShell\\Delegates\\Delegates.csproj",
+        "projectUniqueName": "D:\\BasicC#\\CSharpInNutShell\\CollectionInitializers\\CollectionInitializers.csproj",
+        "projectName": "CollectionInitializers",
+        "projectPath": "D:\\BasicC#\\CSharpInNutShell\\CollectionInitializers\\CollectionInitializers.csproj",
         "packagesPath": "C:\\Users\\Mostofa Kamal Passa\\.nuget\\packages\\",
-        "outputPath": "D:\\BasicC#\\CSharpInNutShell\\Delegates\\obj\\",
+        "outputPath": "D:\\BasicC#\\CSharpInNutShell\\CollectionInitializers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
