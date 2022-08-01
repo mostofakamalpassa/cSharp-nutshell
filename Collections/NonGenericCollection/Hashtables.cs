@@ -10,11 +10,11 @@ namespace Collections.NonGenericCollection
     internal class Hashtables
     {
 
-        Hashtables htable = new Hashtables();
+        Hashtable htable = new Hashtable();
 
         public void Add(Hashtable hashtable)
         {
-            htable.Add(hashtable);
+            htable.Add("Key",hashtable);
         }
     }
 }

@@ -19,3 +19,13 @@ ht.Add("two", "hello every one");
 Hashtables htable = new Hashtables();
 
 htable.Add(ht);
+
+SortedList sl = new SortedList();
+sl.Add("one", arrayList);
+sl.Add("two", arrayList);
+sl.Add("three", "ok this is sorted list");
+arList.AddSortedList(sl);
+
+
+StackNonGeneric stackNonGeneric = new StackNonGeneric();
+stackNonGeneric.StackData();
