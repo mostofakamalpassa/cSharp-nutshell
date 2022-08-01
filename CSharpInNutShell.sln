@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{9C90586D-675B-4801-9BB9-B8FCAE20D4CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionInitializers", "CollectionInitializers\CollectionInitializers.csproj", "{667ADA59-21E5-4E08-979C-8509D5993CD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionInitializers", "CollectionInitializers\CollectionInitializers.csproj", "{667ADA59-21E5-4E08-979C-8509D5993CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{7E1E0906-C1DE-4E3B-ADEF-CD2B593171BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{667ADA59-21E5-4E08-979C-8509D5993CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{667ADA59-21E5-4E08-979C-8509D5993CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{667ADA59-21E5-4E08-979C-8509D5993CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1E0906-C1DE-4E3B-ADEF-CD2B593171BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1E0906-C1DE-4E3B-ADEF-CD2B593171BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1E0906-C1DE-4E3B-ADEF-CD2B593171BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1E0906-C1DE-4E3B-ADEF-CD2B593171BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

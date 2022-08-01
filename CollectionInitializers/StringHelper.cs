@@ -43,10 +43,23 @@ namespace CollectionInitializers
 
     // Extension methods versus instance methods
 
-/******
- * 
- * Any compatible instance method will always take precedence over an extension method.
- * In the following example, Test’s Foo method will always take precedence, even when called with an argument x of type int:
+    /******
+     * 
+     * Any compatible instance method will always take precedence over an extension method.
+     * In the following example, Test’s Foo method will always take precedence, even when called with an argument x of type int:
 
-    *****/
+        *****/
+
+    class Test
+    {
+        public void Foo(object x) { } // This method always wins
+    }
+    static class Extensions
+    {
+        public static void Foo(this Test t, int x) { }
+    }
+
+    // The only way to call the extension method in this case is via normal static  syntax, in other words, Extensions.Foo(...).
+    // 
+
 }

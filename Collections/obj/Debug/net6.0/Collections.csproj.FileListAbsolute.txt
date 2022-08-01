@@ -1,0 +1,15 @@
+D:\BasicC#\CSharpInNutShell\Collections\bin\Debug\net6.0\Collections.exe
+D:\BasicC#\CSharpInNutShell\Collections\bin\Debug\net6.0\Collections.deps.json
+D:\BasicC#\CSharpInNutShell\Collections\bin\Debug\net6.0\Collections.runtimeconfig.json
+D:\BasicC#\CSharpInNutShell\Collections\bin\Debug\net6.0\Collections.dll
+D:\BasicC#\CSharpInNutShell\Collections\bin\Debug\net6.0\Collections.pdb
+D:\BasicC#\CSharpInNutShell\Collections\obj\Debug\net6.0\Collections.csproj.AssemblyReference.cache
+D:\BasicC#\CSharpInNutShell\Collections\obj\Debug\net6.0\Collections.GeneratedMSBuildEditorConfig.editorconfig
+D:\BasicC#\CSharpInNutShell\Collections\obj\Debug\net6.0\Collections.AssemblyInfoInputs.cache
+D:\BasicC#\CSharpInNutShell\Collections\obj\Debug\net6.0\Collections.AssemblyInfo.cs
+D:\BasicC#\CSharpInNutShell\Collections\obj\Debug\net6.0\Collections.csproj.CoreCompileInputs.cache
+D:\BasicC#\CSharpInNutShell\Collections\obj\Debug\net6.0\Collections.dll
+D:\BasicC#\CSharpInNutShell\Collections\obj\Debug\net6.0\refint\Collections.dll
+D:\BasicC#\CSharpInNutShell\Collections\obj\Debug\net6.0\Collections.pdb
+D:\BasicC#\CSharpInNutShell\Collections\obj\Debug\net6.0\Collections.genruntimeconfig.cache
+D:\BasicC#\CSharpInNutShell\Collections\obj\Debug\net6.0\ref\Collections.dll
