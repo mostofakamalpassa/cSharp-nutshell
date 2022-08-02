@@ -35,3 +35,7 @@ BasicCollections bsColl = new BasicCollections();
 
 //bsColl.IEnumaratorEnumarable();
 
+IEnumerable ob = new List<int>() { 2, 3, 4, 4, 5, 6, 7, 8 };
+
+
+Console.WriteLine(BasicCollections.count(ob));

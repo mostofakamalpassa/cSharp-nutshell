@@ -22,5 +22,34 @@ namespace Collections
             }
 
         }
+
+        public void  IEnumariable()
+        {
+            int[] data = { 2, 3, 4, 5, 6, 78 };
+
+            var rator = ((IEnumerable<int>)data).GetEnumerator();
+        }
+
+        public  static int count(IEnumerable e)
+        {
+            int count = 0;
+
+            foreach(object o in e)
+            {
+                var subElement = o as IEnumerable;
+
+                if(subElement != null)
+                {
+                    count += subElement.Cast<int>().Count();
+                   
+                }
+                else
+                {
+                    count++;
+                }
+            }
+
+            return count;
+        }
     }
 }
