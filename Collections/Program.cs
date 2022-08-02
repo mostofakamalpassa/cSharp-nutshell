@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Collections;
 using Collections.NonGenericCollection;
 using System.Collections;
 
@@ -27,5 +28,10 @@ sl.Add("three", "ok this is sorted list");
 arList.AddSortedList(sl);
 
 
-StackNonGeneric stackNonGeneric = new StackNonGeneric();
-stackNonGeneric.StackData();
+//StackNonGeneric stackNonGeneric = new StackNonGeneric();
+//stackNonGeneric.StackData();
+
+BasicCollections bsColl = new BasicCollections();
+
+//bsColl.IEnumaratorEnumarable();
+
