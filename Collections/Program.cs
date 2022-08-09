@@ -4,6 +4,7 @@ using Collections.GenericCollection;
 using Collections.NonGenericCollection;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 
 
 
@@ -80,3 +81,14 @@ List<int> ints = new List<int>() { 4, 5, 65, 6, 7, 8, 9 };
 
 
 
+StringBuilder[] stringBuilder = new StringBuilder[5];
+stringBuilder[0] = new StringBuilder("jamal kahan");
+stringBuilder[1] = new StringBuilder("we love alahe");
+stringBuilder[2] = new StringBuilder("toamal kahan");
+stringBuilder[3] = new StringBuilder("adfadsfasdf");
+stringBuilder[4] = new StringBuilder("terewrqwer");
+
+//foreach(var item in stringBuilder)
+//{
+//    Console.WriteLine(item);
+//}
