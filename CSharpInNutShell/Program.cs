@@ -18,6 +18,14 @@ class Program
     static void Main() // Program entry point
     {
 
+
+
+        DateTime datedate = DateTime.Now;
+        
+
+
+        Console.WriteLine($"{datedate.Year} {datedate.Month} {datedate.Day}");
+
         StringBuilder stb;
         stb = new StringBuilder("hello kamal passa");
         CSharpInNutShell.Basic.Foo foo = new CSharpInNutShell.Basic.Foo(stb.ToString());
