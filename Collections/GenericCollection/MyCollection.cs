@@ -29,5 +29,32 @@ namespace Collections.GenericCollection
             yield return 6;
             yield return 7;
         }
+
+
+        public void ListSystem()
+        {
+            List<string> str = new List<string>();
+
+            str.Add("one");
+            str.Add("two");
+            str.Insert(0, "insert one");
+            str.Insert(3, "insert three");
+            str.AddRange(new string[] { "addRange one", "addrange two", "addragne Three" });
+            str.InsertRange(4, new List<string> { "inserRangeOne", "inserRagne two" });
+
+
+            foreach(var item in str)
+            {
+                Console.WriteLine(item);
+            }
+
+            //str.Remove("two");
+           // str.RemoveAt(3);
+           // str.RemoveRange(3, 5);
+           // str.RemoveAll(s => s.StartsWith("a"));
+        }
     }
+
+
+   
 }

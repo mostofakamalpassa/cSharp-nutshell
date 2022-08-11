@@ -92,3 +92,16 @@ stringBuilder[4] = new StringBuilder("terewrqwer");
 //{
 //    Console.WriteLine(item);
 //}
+
+// Create a string array 2 elements in length:
+
+Array a = Array.CreateInstance(typeof(string), 2);
+
+a.SetValue("hi", 0);
+a.SetValue("Ji", 1);
+//a.SetValue("Oh", 2);
+
+//a.GetValue(1);
+
+//MyCollection MyCollection = new MyCollection();
+//MyCollection.ListSystem();
