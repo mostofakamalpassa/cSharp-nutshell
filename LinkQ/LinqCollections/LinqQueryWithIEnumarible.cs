@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,8 +18,8 @@ namespace LinkQ.LinqCollections
 
             // all so we can use  another way Linkq Query 
 
-            IEnumerable<string> nameStr = Names.Where(x => x.Length > 0);
-
+            //IEnumerable<string> nameStr = Names.Where(x => x.Length > 0).OrderBy(n => n.Length);
+            IEnumerable<string> nameStr = Names.Where(x => x.Length > 0).OrderBy(n => n.Length).Select(x => x.ToUpper());
             foreach(var item in nameStr)
             {
                 Console.WriteLine(item);
@@ -30,6 +31,27 @@ namespace LinkQ.LinqCollections
             //}
 
 
+
+
+        }
+
+
+        public void LinkqFiltering()
+        {
+
+            List<string> strings = new List<string>() { "bangaldehs", "india", "Pakistan", "america" };
+            IEnumerable<string> filter = strings.Where(x => x.Contains("a"));
+            IEnumerable<string> sorted = filter.OrderBy(x => x.Length > 0);
+            IEnumerable<string> finalQuery = sorted.Select(x => x.ToLower());
+
+
+            IEnumerator enumerator = finalQuery.GetEnumerator();
+            while (enumerator.MoveNext())
+            {
+                Console.WriteLine(enumerator.Current);
+  
+            }
+       
         }
     }
 }

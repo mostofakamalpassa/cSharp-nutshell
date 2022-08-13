@@ -3,4 +3,5 @@ using LinkQ.LinqCollections;
 
 LinqQueryWithIEnumarible linqQueryWithIEnumarible = new LinqQueryWithIEnumarible();
 
-linqQueryWithIEnumarible.LinqQuery();
+//linqQueryWithIEnumarible.LinqQuery();
+linqQueryWithIEnumarible.LinkqFiltering();
