@@ -1,0 +1,15 @@
+D:\BasicC#\CSharpInNutShell\LinkQ\bin\Debug\net6.0\LinkQ.exe
+D:\BasicC#\CSharpInNutShell\LinkQ\bin\Debug\net6.0\LinkQ.deps.json
+D:\BasicC#\CSharpInNutShell\LinkQ\bin\Debug\net6.0\LinkQ.runtimeconfig.json
+D:\BasicC#\CSharpInNutShell\LinkQ\bin\Debug\net6.0\LinkQ.dll
+D:\BasicC#\CSharpInNutShell\LinkQ\bin\Debug\net6.0\LinkQ.pdb
+D:\BasicC#\CSharpInNutShell\LinkQ\obj\Debug\net6.0\LinkQ.csproj.AssemblyReference.cache
+D:\BasicC#\CSharpInNutShell\LinkQ\obj\Debug\net6.0\LinkQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\BasicC#\CSharpInNutShell\LinkQ\obj\Debug\net6.0\LinkQ.AssemblyInfoInputs.cache
+D:\BasicC#\CSharpInNutShell\LinkQ\obj\Debug\net6.0\LinkQ.AssemblyInfo.cs
+D:\BasicC#\CSharpInNutShell\LinkQ\obj\Debug\net6.0\LinkQ.csproj.CoreCompileInputs.cache
+D:\BasicC#\CSharpInNutShell\LinkQ\obj\Debug\net6.0\LinkQ.dll
+D:\BasicC#\CSharpInNutShell\LinkQ\obj\Debug\net6.0\refint\LinkQ.dll
+D:\BasicC#\CSharpInNutShell\LinkQ\obj\Debug\net6.0\LinkQ.pdb
+D:\BasicC#\CSharpInNutShell\LinkQ\obj\Debug\net6.0\LinkQ.genruntimeconfig.cache
+D:\BasicC#\CSharpInNutShell\LinkQ\obj\Debug\net6.0\ref\LinkQ.dll

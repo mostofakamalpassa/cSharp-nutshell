@@ -53,6 +53,28 @@ namespace Collections.GenericCollection
            // str.RemoveRange(3, 5);
            // str.RemoveAll(s => s.StartsWith("a"));
         }
+
+
+
+        public void ArrayListSystem()
+        {
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add("one");   
+            arrayList.Add("two");
+           // arrayList.Add(55);
+
+
+            // convert to array list to List object 
+
+            List<string> list = arrayList.Cast<string>().ToList();
+        }
+
+
+        public void LinkedListSystem()
+        {
+            LinkedList<string> list = new LinkedList<string>();
+
+        }
     }
 
 
