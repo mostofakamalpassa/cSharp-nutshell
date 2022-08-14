@@ -74,5 +74,28 @@ namespace LinkQ.LinqCollections
             IEnumerable union = seq1.Union(seq2); // { 1, 2, 3, 4, 5 }
             IEnumerable concat = seq1.Concat(seq2); // { 1, 2, 3, 3, 4, 5 }
         }
+
+        public void QuerySyntax()
+        {
+            string[] names = { "Tom", "Dick", "Harry", "Mary", "Jay" };
+
+            IEnumerable<string> query = from name in names where name.Contains("a") orderby name.Length select name.ToUpper();
+
+
+            IEnumerator quers = query.GetEnumerator();
+
+            while (quers.MoveNext())
+            {
+                Console.WriteLine(quers.Current);
+            }
+
+
+
+            //from n in names // n is our range variable
+            //where n.Contains("a") // n = directly from the array
+            //orderby n.Length // n = subsequent to being filtered
+            //select n.ToUpper() // n = subsequent to being sorted
+
+        }
     }
 }
