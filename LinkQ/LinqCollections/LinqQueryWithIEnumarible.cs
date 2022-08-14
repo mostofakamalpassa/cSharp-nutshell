@@ -53,5 +53,26 @@ namespace LinkQ.LinqCollections
             }
        
         }
+
+        public void OtherOperations()
+        {
+            int[] numbers = { 10, 9, 8, 7, 6 };
+
+            int firstNaumber = numbers.First();
+            int lastNaumer = numbers.Last();
+            int secondNumber = numbers.ElementAt(1);
+
+            int secondLowestNumber = numbers.OrderBy(x => x).Skip(1).First();
+        }
+
+
+        public void UnionConcat()
+        {
+            int[] seq1 = { 1, 2, 3 };
+            int[] seq2 = { 3, 4, 5 };
+
+            IEnumerable union = seq1.Union(seq2); // { 1, 2, 3, 4, 5 }
+            IEnumerable concat = seq1.Concat(seq2); // { 1, 2, 3, 3, 4, 5 }
+        }
     }
 }
