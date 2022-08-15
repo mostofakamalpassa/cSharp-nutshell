@@ -187,6 +187,88 @@ namespace LinkQ.LinqCollections
             {
                 Console.WriteLine(item);
             }
+
+            IEnumerable<int> queryEexpression = new int[]{ 10,22, 3, 2, 5,6};
+
+            var filter = queryEexpression.Where(y => y>0);
+            var sorted = filter.OrderBy(x => x);
+            var select = sorted.Select(x => x);
+    
+            IEnumerator<int> iter = select.GetEnumerator();
+
+            while (iter.MoveNext())
+            {
+                Console.Write(iter.Current+" , ");
+            }
+        }
+
+        public void Subqueries()
+        {
+
+            string[] musos ={ "David Gilmour", "Roger Waters", "Rick Wright", "Nick Mason" };
+
+            IEnumerable<string> query = musos.OrderBy(m => m.Split().Last());
+
+            foreach(var item in query)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+
+        public void SubqueriesAndSubQuery()
+        {
+            string[] names = { "Tom", "Dick", "Harry", "Mary", "Jay" };
+
+            IEnumerable<string> outerQuery = names.Where(x => x.Length == names.OrderBy(x2 => x2.Length).Select(x3 => x3.Length).First());
+
+            foreach(string item in outerQuery)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public void SubqueriesAndSubQueryWithQueryExpression()
+        {
+            string[] names = { "Tom", "Dick", "Harry", "Mary", "Jay" };
+
+            IEnumerable<string> outerQuery = from n1 in names where n1.Length == (from n2 in names orderby n2.Length select n2.Length).First() select n1;
+
+            foreach(var item in outerQuery)
+            {
+                Console.WriteLine(item);
+            }
+
+        }
+
+        public void MinAggrationFunction()
+        {
+            string[] names = { "Tom", "Dick", "Harry", "Mary", "Jay" };
+
+            IEnumerable<string> withoutMin = from n1 in names where n1.Length == names.OrderBy(n2 => n2.Length).First().Length select n1;
+
+
+            // with Min function 
+
+            IEnumerable<string> withMin = from n2 in names where n2.Length == names.Min(x => x.Length) select n2;
+
+        }
+
+
+        public void QueryWithIntoKeyword()
+        {
+            string[] names = { "Tom", "Dick", "Harry", "Mary", "Jay" };
+
+            IEnumerable<string> query = from n in names select n.Replace("a", "").Replace("e", "").Replace("i", "").Replace("o", "").Replace("u", "") into noVewol where noVewol.Length > 0 orderby noVewol select noVewol;
+
+            foreach (var item in query)
+            {
+                Console.Write(item  + " | ");
+            }
+            {
+
+            }
+
         }
     }
 }

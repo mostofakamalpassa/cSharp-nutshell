@@ -14,4 +14,8 @@ LinqQueryWithIEnumarible linqQueryWithIEnumarible = new LinqQueryWithIEnumarible
 //linqQueryWithIEnumarible.DefferExecution();
 //linqQueryWithIEnumarible.DefferAndMixedQuery();
 //linqQueryWithIEnumarible.RemoveVoiel();
-linqQueryWithIEnumarible.ChainingDecorator();
+//linqQueryWithIEnumarible.ChainingDecorator();
+//linqQueryWithIEnumarible.Subqueries();
+//linqQueryWithIEnumarible.SubqueriesAndSubQuery();
+//linqQueryWithIEnumarible.SubqueriesAndSubQueryWithQueryExpression();
+linqQueryWithIEnumarible.QueryWithIntoKeyword();
