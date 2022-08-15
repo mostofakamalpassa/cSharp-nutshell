@@ -131,6 +131,24 @@ namespace LinkQ.LinqCollections
             {
                 Console.WriteLine(num.Current+"|");
             }
+
+        }
+
+        public void DefferAndMixedQuery()
+        {
+
+            var numbers = new List<int> { 2, 3, 4, 5, 6, 7 };
+
+            List<int> temItems = numbers.Select(x => x * 5).ToList();
+
+
+            IEnumerator tem = temItems.GetEnumerator();
+
+            while (tem.MoveNext())
+            {
+                Console.WriteLine(tem.Current);
+            }
+
         }
     }
 }

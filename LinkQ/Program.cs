@@ -11,4 +11,5 @@ LinqQueryWithIEnumarible linqQueryWithIEnumarible = new LinqQueryWithIEnumarible
 
 //linqQueryWithIEnumarible.QuerySyntax();
 //linqQueryWithIEnumarible.MixedQuery();
-linqQueryWithIEnumarible.DefferExecution();
+//linqQueryWithIEnumarible.DefferExecution();
+linqQueryWithIEnumarible.DefferAndMixedQuery();
