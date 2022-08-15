@@ -150,5 +150,43 @@ namespace LinkQ.LinqCollections
             }
 
         }
+
+
+        public void CapturedVariable()
+        {
+
+            int[] numbers = { 1, 2 };
+            int factor = 10;
+            IEnumerable<int> query = numbers.Select(n => n * factor);
+            factor = 20;
+            foreach (int n in query) Console.Write(n + "|"); // 20|40|
+        }
+
+
+
+        public void RemoveVoiel()
+        {
+            IEnumerable<char> query = "Not what you might expect";
+
+            query = query.Where(c => c != 'a');
+            query = query.Where(c => c != 'e');
+            query = query.Where(c => c != 'i');
+            query = query.Where(c => c != 'o');
+
+            foreach(var item in query)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public void ChainingDecorator()
+        {
+            IEnumerable<int> query = new List<int> { 2, 3, 4, 5, 6 }.Where(n => n < 5).OrderBy(x => x).Select(x => x * 10);
+
+            foreach(var item in query)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 }
