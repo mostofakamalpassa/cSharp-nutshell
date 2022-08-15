@@ -97,5 +97,40 @@ namespace LinkQ.LinqCollections
             //select n.ToUpper() // n = subsequent to being sorted
 
         }
+
+        public void MixedQuery()
+        {
+
+            string[] names = { "Tom", "Dick", "Harry", "Mary", "Jay" };
+
+
+            int length = (from n in names where n.Contains("a") select n).Count();
+
+            Console.WriteLine(length);
+
+            string name = (from n in names orderby n select n).First();
+
+            Console.WriteLine(name );
+        }
+
+
+        public void DefferExecution()
+        {
+            var numbers = new List<int> { 1};
+
+            IEnumerable<int> query = numbers.Select(n => n*10);
+            numbers.Add(3);
+            numbers.Add(2);
+            numbers.Add(4);
+            numbers.Add(5);
+
+
+            IEnumerator num  = query.GetEnumerator();
+
+            while (num.MoveNext())
+            {
+                Console.WriteLine(num.Current+"|");
+            }
+        }
     }
 }
