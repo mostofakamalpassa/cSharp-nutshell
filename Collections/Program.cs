@@ -2,6 +2,7 @@
 using Collections;
 using Collections.GenericCollection;
 using Collections.NonGenericCollection;
+using Collections.ProjectionStatigies;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -105,3 +106,6 @@ a.SetValue("Ji", 1);
 
 //MyCollection MyCollection = new MyCollection();
 //MyCollection.ListSystem();
+TempProjectionItemsOnProject item = new TempProjectionItemsOnProject();
+
+item.TempProjectQueryExpression();
