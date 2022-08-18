@@ -10,5 +10,8 @@ namespace EFProject.Model
     {
         public int ID { get; set; }
         public string Name { get; set; }
+
+        // Child navigation property, which must be of type ICollection<T>:
+        public virtual List<Purchase> Purchases { get; set; } = new List<Purchase>();
     }
 }
