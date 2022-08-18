@@ -27,9 +27,18 @@ namespace Collections.ProjectionStatigies
                                                          Vowelless = n.Replace("a", "").Replace("e", "").Replace("i", "").Replace("o", "").Replace("u", "")
                                                      });
 
+            var interMidate = from n in items where n.Vowelless.Length > 2 select n.Original;
+
             foreach(TempProjectionItem item in items)
             {
                 Console.Write(item.Original+ " duplicate "+ item.Vowelless+" | ");
+            }
+
+            IEnumerator<string> enumerator = interMidate.GetEnumerator();
+
+            while (enumerator.MoveNext())
+            {
+                Console.WriteLine("orginal "+ enumerator.Current);
             }
         }
     }

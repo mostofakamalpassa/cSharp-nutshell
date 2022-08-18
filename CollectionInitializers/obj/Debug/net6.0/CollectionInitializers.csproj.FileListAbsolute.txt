@@ -1,0 +1,15 @@
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\bin\Debug\net6.0\CollectionInitializers.exe
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\bin\Debug\net6.0\CollectionInitializers.deps.json
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\bin\Debug\net6.0\CollectionInitializers.runtimeconfig.json
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\bin\Debug\net6.0\CollectionInitializers.dll
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\bin\Debug\net6.0\CollectionInitializers.pdb
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\obj\Debug\net6.0\CollectionInitializers.csproj.AssemblyReference.cache
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\obj\Debug\net6.0\CollectionInitializers.GeneratedMSBuildEditorConfig.editorconfig
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\obj\Debug\net6.0\CollectionInitializers.AssemblyInfoInputs.cache
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\obj\Debug\net6.0\CollectionInitializers.AssemblyInfo.cs
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\obj\Debug\net6.0\CollectionInitializers.csproj.CoreCompileInputs.cache
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\obj\Debug\net6.0\CollectionInitializers.dll
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\obj\Debug\net6.0\refint\CollectionInitializers.dll
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\obj\Debug\net6.0\CollectionInitializers.pdb
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\obj\Debug\net6.0\CollectionInitializers.genruntimeconfig.cache
+D:\BasicC#\CSharpInNutShell\CollectionInitializers\obj\Debug\net6.0\ref\CollectionInitializers.dll
