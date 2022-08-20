@@ -2,6 +2,7 @@
 using EFProject.DbConnection;
 using EFProject.Model;
 using EFProject.Repository;
+using Microsoft.EntityFrameworkCore;
 
 Console.WriteLine("Hello, World!");
 
@@ -33,3 +34,26 @@ var dbCustomer = new GetCustomers();
 //cust.Purchases.Add(p1);
 //cust.Purchases.Add(p2);
 //dbContext.SaveChanges();
+
+
+
+
+//var cust = dbContext.Customers.Include(c => c.Purchases).Where(c => c.ID == 2).First();
+
+//Console.WriteLine(cust.Name + " "+ cust.ID);
+
+
+var custInfo = dbContext.Customers
+.Where(c => c.ID == 1)
+.Select(c => new
+{
+    Name = c.Name,
+    Purchases = c.Purchases.Select(p => new {
+        p.Description,
+        p.Price
+    })
+})
+.First();
+
+
+//Console.WriteLine(custInfo.Name + " "+ custInfo.Purchases.FirstOrDefault().Description);
