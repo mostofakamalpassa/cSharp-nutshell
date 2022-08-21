@@ -32,3 +32,23 @@ IEnumerable<string> query = names.Where((n, i) => i % 2 == 0);
 //{
 //    Console.WriteLine(ret);
 //}
+
+string tempPath = Path.GetTempPath();
+DirectoryInfo[] dirs = new DirectoryInfo(tempPath).GetDirectories();
+var querys = from d in dirs
+where (d.Attributes & FileAttributes.System) == 0
+select new
+{
+    DirectoryName = d.FullName,
+    Created = d.CreationTime,
+    Files = from f in d.GetFiles()
+            where (f.Attributes & FileAttributes.Hidden) == 0
+            select new { FileName = f.Name, f.Length, }
+};
+
+foreach (var dirFiles in querys)
+{
+    Console.WriteLine("Directory: " + dirFiles.DirectoryName);
+    foreach (var file in dirFiles.Files)
+        Console.WriteLine(" " + file.FileName + " Len: " + file.Length);
+}
