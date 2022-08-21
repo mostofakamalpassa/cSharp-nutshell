@@ -24,7 +24,7 @@ IEnumerable<string> query = names.Where((n, i) => i % 2 == 0);
 //{
 //    Console.WriteLine(name);
 
-//NutshellContext dbContext = new NutshellContext();
+NutshellContext dbContext = new NutshellContext();
 //var retsult = dbContext.Purchase.Where(p => p.Description.CompareTo("rr") < 0).ToList();
 
 
@@ -51,4 +51,24 @@ foreach (var dirFiles in querys)
     Console.WriteLine("Directory: " + dirFiles.DirectoryName);
     foreach (var file in dirFiles.Files)
         Console.WriteLine(" " + file.FileName + " Len: " + file.Length);
+}
+
+
+
+var queryes =
+from c in dbContext.Customers
+select new
+{
+    c.Name,
+    Purchases = (from p in dbContext.Purchase
+                 where p.CustomerID == c.ID && p.Price
+                 > 1000
+                 select new { p.Description, p.Price })
+.ToList()
+};
+foreach (var namePurchases in queryes)
+{
+    Console.WriteLine("Customer: " + namePurchases.Name);
+    foreach (var purchaseDetail in namePurchases.Purchases)
+        Console.WriteLine(" - $$$: " + purchaseDetail.Price);
 }
