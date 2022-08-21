@@ -1,18 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using QueryExpression.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace QueryExpression.DBConnect
 {
     public class NutshellContext : DbContext
     {
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
+          optionsBuilder.UseSqlServer(@"Server=Server;Database=Nutshell;Trusted_Connection=True");
+
         public DbSet<Customer> Customers { get; set; }
-        public DbSet<Purchase> Purchases { get; set; }
+        public DbSet<Purchase> Purchase { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Customer>(entity =>
@@ -21,4 +20,5 @@ namespace QueryExpression.DBConnect
                 entity.Property(e => e.Name).IsRequired(); // Column is not nullable
             });
         }
+    }
 }
